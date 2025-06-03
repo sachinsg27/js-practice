@@ -1,0 +1,99 @@
+## Topics -
+
+- var, let, const - scope & usage
+- Data Types - Primitive, Non-Primitive
+- Operators - Arithmatic, Logical, Assignment, Comparison, Ternery
+- Type Conversion - implicit & explicit
+- Control Structures - if, else if, switch
+- Loops - for, while, do-while, for-of, for-in
+
+
+
+1- var, let, const
+
+
+ | Feature          | `var`       | `let` | `const` |
+| -------------     | ----------- | ----- | ------- |
+| Scope             | Function    | Block | Block   |
+| Hoisted           | Yes         | Yes   | Yes     |
+| Default Init      | `undefined` | No    | No      |
+| TDZ               | No          | Yes   | Yes     |
+| Reassignable      | Yes         | Yes   | No      |
+| Mutable (obj,arr) | Yes         | Yes   | Yes     |
+
+- Reassign and mobility
+
+| Keyword | Reassign Object/Array?   | Mutate Object/Array?  | Scope Type      |
+| ------- | ----------------------   | --------------------  | --------------- |
+| `var`   | ✅ Yes                  | ✅ Yes                | Function-scoped |
+| `let`   | ✅ Yes                  | ✅ Yes                | Block-scoped    |
+| `const` | ❌ No                   | ✅ Yes                | Block-scoped    |
+
+
+
+2- Data Types(Primitive & non-Primitive)
+    -Primitive
+        String: "hello"
+
+        Number: 42, 3.14
+
+        Boolean: true, false
+
+        null: empty, intentional absence
+
+        undefined: declared but not assigned
+
+        Symbol: unique identifiers
+
+        BigInt: large integers  
+
+|Type                 |          Use Case                     |      Example               |
+| -----------         | ------------------------------------- | -------------------------- |
+| `null`              | Intentional empty value               | `let a = null`             |
+| `undefined`         | Declared but not assigned             | `let b; // b is undefined` |
+| `Symbol`            | Unique keys (e.g., object properties) | `Symbol("id")`             |
+| `BigInt`            | Huge integers                         | `9007199254740991n`        |
+
+
+ - BigInt – For Very Large Integers
+🔹 What is BigInt?
+BigInt is a numeric primitive in JavaScript used to represent integers larger than Number.MAX_SAFE_INTEGER (2⁵³ - 1).
+
+Standard Number type can only safely store integers up to 9007199254740991 (±2⁵³ − 1).
+
+BigInt allows you to work with arbitrarily large integers.
+
+// syntax:
+const big = 123456789012345678901234567890n; // use 'n' at the end
+const another = BigInt("9876543210123456789"); // alternative
+
+
+
+  Symbol – Unique, Unchangeable Identifier
+🔹 What is Symbol?
+Symbol is a primitive used to create unique, anonymous values.
+Even if two symbols have the same description, they’re always unique.
+
+// syntax:
+
+const sym1 = Symbol("id");
+const sym2 = Symbol("id");
+
+console.log(sym1 === sym2); // false ✅ always unique
+
+
+
+- Non-Primitive Data Types:
+
+| Type     | Description                  | Example Use Case             |
+| -------- | ---------------------------- | ---------------------------- |
+| Object   | Key-value pairs              | User data, config            |
+| Array    | Ordered list                 | Item collections, data loops |
+| Function | Callable object              | Reusable logic, callbacks    |
+| Date     | Time and date values         | Logging, scheduling          |
+| Map      | Key-value store with any key | Caching, fast lookups        |
+| Set      | Unique value store           | Deduplication, ID tracking   |
+
+
+3. Operators :
+
