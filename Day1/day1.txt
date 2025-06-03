@@ -97,3 +97,12 @@ console.log(sym1 === sym2); // false ✅ always unique
 
 3. Operators :
 
+  - Arithmatic 
+  - Assignment
+  - Comparison
+  - Logical 
+  - Ternery
+  - Spread & Rest
+  - Type
+  - String
+  - Nullish Coalescing
