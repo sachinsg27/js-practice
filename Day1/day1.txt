@@ -4,7 +4,7 @@
 - Data Types - Primitive, Non-Primitive
 - Operators - Arithmatic, Logical, Assignment, Comparison, Ternery
 - Type Conversion - implicit & explicit
-- Control Structures - if, else if, switch
+- Conditional statements - if, else if, else, switch
 - Loops - for, while, do-while, for-of, for-in
 
 
@@ -106,3 +106,9 @@ console.log(sym1 === sym2); // false ✅ always unique
   - Type
   - String
   - Nullish Coalescing
+
+
+4. Type Conversion (implicit & explicit)
+
+  - Implicit (Js does operations by himself)
+  - Explicit (We do it manually)
